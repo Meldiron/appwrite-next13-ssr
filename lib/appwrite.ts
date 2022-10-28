@@ -1,4 +1,4 @@
-import { Client, Account, ID } from "appwrite";
+import { Client, Account } from "appwrite";
 
 export const APPWRITE_PROJECT_ID = "appwriteSsr";
 export const APPWRITE_ENDPOINT = "https://api.appwrite-next-ssr.matejbaco.eu/v1";
