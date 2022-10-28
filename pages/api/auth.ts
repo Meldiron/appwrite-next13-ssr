@@ -28,9 +28,11 @@ export default async function handler(
 
     const response = await request.json();
 
+    const newHostname = APP_HOSTNAME === 'localhost' ? APP_HOSTNAME : '.' + APP_HOSTNAME;
+
     const cookie = (request.headers.get("set-cookie") ?? "")
       .split("." + APPWRITE_HOSTNAME)
-      .join("." + APP_HOSTNAME);
+      .join(newHostname);
 
     res.setHeader("set-cookie", cookie);
     res.status(200).json({
