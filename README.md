@@ -1,3 +1,43 @@
+# 🤖 SSR - Appwrite ♥️ Next.js 13
+
+> Demo application showcasing server side rendered authenticated communication between Next.js and Appwrite.
+
+## 🧰 Tech Stack
+
+- [Appwrite](https://appwrite.io/)
+- [Next.js 13](https://nextjs.org/blog/next-13)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## ⚙️ Setup Server
+
+1. Setup Appwrite server
+2. Create project `appwriteSsr`
+3. Deploy Appwrite as subdomain of your app domain, for example `api.myapp.com`
+
+> If running on localhost port 80, you can use `localhost`
+
+4. Update `APPWRITE_ENDPOINT` and `APPWRITE_HOSTNAME` in `lib/appwrite.js`
+
+## 👀 Setup Client
+
+1. Install libarries `npm install`
+2. Deploy Next.js app on a domain, for example `myapp.com`
+
+> If running on localhost port 3000, you can use `localhost`
+
+3. Update `APP_HOSTNAME` in `lib/appwrite.js`
+
+4. Start server `npm serve`
+
+5. In Appwrite Dashboard, add your frontend app domain as web platform
+
+## 🖼️ Screenshots
+
+![Screenshot](docs/screenshot1.png)
+![Screenshot](docs/screenshot2.png)
+
+## 🤖 Auto-generated documentation
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
